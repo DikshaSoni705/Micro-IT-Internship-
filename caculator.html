@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    html,body{
+        margin:0;
+        padding:0;
+        height:100%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #f2f2f2;
+    }
+    .calculator {
+        border: 1px solid black;
+        width: 100%;
+        max-width: 400px;
+        background-color: #121212;
+        padding : 10px 10px 30px;
+        border-radius: 20px;
+
+    }
+    .screen{
+        height: 100px;
+        background-color: #121212;
+        color: white;
+        display: flex;
+        justify-content: end;
+        align-items : end;
+        font-size: 70px;
+        font-weight: 500;
+        padding: 5px;
+        margin: 20px 10px 20px;
+    }
+    .keypad{
+        padding: 5px;
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+    }
+    .btn {
+        flex: auto;
+        margin : 3px;
+        width: 40px;
+        height: 80px;
+        border-radius: 100%;
+        font-size: 35px;
+        border: none;
+    }
+    .operator{
+        background-color: #ff9c12;
+        color: black;
+    }
+    .num{
+        background-color: #343434;
+        color: #fcfcfc;
+    }
+    .reset,
+    .negative,
+    .percent {
+        background-color: #b4b4b4 ;
+        color: black;
+    }
+    .double-size {
+        flex-grow: 2;
+        height: auto;
+        border-radius: 50px;
+    }
+</style>
+<body>
+    <div class="container">
+         <div class="calculator">
+        <div class="screen"></div>
+        <div class="keypad"></div>
+        <div class="controls">
+            <button class="btn reset">AC</button>
+            <button class="btn negative">+/-</button>
+            <button class="btn percent">%</button>
+            <button class="btn operator">&#247;</button>
+        </div>
+        <div class="controls">
+            <button class="btn num">7</button>
+            <button class="btn num">8</button>
+            <button class="btn num">9</button>
+            <button class="btn operator">X</button>
+        </div>
+        <div class="controls">
+            <button class="btn num">4</button>
+            <button class="btn num">5</button>
+            <button class="btn num">6</button>
+            <button class="btn operator">-</button>
+        </div>
+        <div class="controls">
+            <button class="btn num">1</button>
+            <button class="btn num">2</button>
+            <button class="btn num">3</button>
+            <button class="btn operator">+</button>
+        </div>
+        <div class="controls">
+            <button class="btn num double-size">0</button>
+            <button class="btn num">.</button>
+            <button class="btn operator">=</button>
+        </div>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
